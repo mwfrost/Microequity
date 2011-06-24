@@ -1,0 +1,20 @@
+--- # My first experiment
+
+world:
+      classname: NullWorld
+
+engines:
+    - classname: AsynchronousRandWReplace
+      market:
+          classname: ContinuousOrderDriven
+      daylength: 20
+      days: 5
+
+agents:
+    - classname: ZeroIntelligenceTrader
+      number: 1000
+      money: 10000
+      stocks: 1000
+      args: [1000, 100]
+
+outputfilename: demo1.csv
